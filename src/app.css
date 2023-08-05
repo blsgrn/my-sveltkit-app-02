@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Source+Code+Pro:ital,wght@0,400;1,700&family=Source+Sans+3:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
 @tailwind base;
-/* Apply default font body for base */
+/* Apply default font of body and fill of svg for base */
 @layer base {
 	body {
 		@apply font-sansSerif;
@@ -10,4 +10,17 @@
 	}
 }
 @tailwind components;
+/* Apply default grid properties of table for base */
+@layer components {
+	.invoice-table {
+		@apply grid grid-cols-invoiceTable gap-4 px-4 mb-3 w-full;
+	}
+}
+
 @tailwind utilities;
+/* Apply default utility called center*/
+@layer utilities {
+	.center {
+		@apply flex justify-center items-center;
+	}
+}
